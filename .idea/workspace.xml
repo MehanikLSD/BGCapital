@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93d2dfa8-ba5a-46e8-8821-41a816ddf403" name="Default Changelist" comment="" />
+    <list default="true" id="93d2dfa8-ba5a-46e8-8821-41a816ddf403" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/blocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/blocks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,111 +16,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43931088">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/venv/Main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-221">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#645#687#0" />
-                    <element signature="e#772#1178#0" />
-                    <element signature="e#1224#1451#0" />
-                    <element signature="e#1525#1698#0" />
-                    <element signature="e#1737#1929#0" />
-                    <element signature="e#1966#2237#0" />
-                    <element signature="e#2281#2459#0" />
-                    <element signature="e#2531#2924#0" />
-                    <element signature="e#2963#3409#0" />
-                    <element signature="e#3445#3512#0" />
-                    <element signature="e#3584#3600#0" />
-                    <element signature="e#3633#3649#0" />
-                    <element signature="e#3688#3705#0" />
-                    <element signature="e#3842#3937#0" />
-                    <element signature="e#4015#4366#0" />
-                    <element signature="e#4458#5227#0" />
-                    <element signature="e#5327#6644#0" />
-                    <element signature="e#6722#7622#0" />
-                    <element signature="e#8849#9612#0" />
-                    <element signature="e#9716#10438#0" />
-                    <element signature="e#10544#11202#0" />
-                    <element signature="e#11309#11944#0" />
-                    <element signature="e#11980#12018#0" />
-                    <element signature="e#12038#12885#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/game.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="246" column="27" lean-forward="true" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                    <element signature="e#478#1857#0" />
-                    <element signature="e#787#1090#0" />
-                    <element signature="e#1024#1167#0" />
-                    <element signature="e#1197#1210#0" />
-                    <element signature="e#1240#1253#0" />
-                    <element signature="e#1283#1296#0" />
-                    <element signature="e#1326#1339#0" />
-                    <element signature="e#1372#1388#0" />
-                    <element signature="e#1430#1455#0" />
-                    <element signature="e#1493#1514#0" />
-                    <element signature="e#1553#1575#0" />
-                    <element signature="e#1730#1744#0" />
-                    <element signature="e#1781#1802#0" />
-                    <element signature="e#1844#1865#0" />
-                    <element signature="e#1945#7898#0" />
-                    <element signature="e#5127#5450#0" />
-                    <element signature="e#9439#11338#0" />
-                    <element signature="e#7242#7937#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/blocks.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1728">
-                  <caret line="494" column="21" selection-start-line="494" selection-start-column="21" selection-end-line="494" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/venv/game.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="248" column="8" lean-forward="true" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="381" column="16" selection-start-line="381" selection-start-column="4" selection-end-line="381" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="452" lean-forward="true" selection-start-line="452" selection-end-line="452" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#1285#1652#0" />
+                <element signature="e#11441#11852#0" />
+                <element signature="e#11892#14383#0" />
+                <element signature="e#14419#17427#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/blocks.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="625" column="1" lean-forward="true" selection-start-line="625" selection-start-column="1" selection-end-line="625" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,13 +73,21 @@
     <findStrings>
       <find>bir</find>
       <find>gameSession</find>
+      <find>This company has an owner</find>
+      <find>unlocerBlocksForPlayer</find>
+      <find>Materials</find>
+      <find>print</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/venv/Scripts/GenerateBlocksForMilliarder.py" />
         <option value="$PROJECT_DIR$/venv/test.py" />
+        <option value="$PROJECT_DIR$/../miliarder/venv/Main.py" />
         <option value="$PROJECT_DIR$/venv/blocks.json" />
         <option value="$PROJECT_DIR$/venv/Main.py" />
         <option value="$PROJECT_DIR$/venv/game.py" />
@@ -140,8 +95,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="-12" />
+    <option name="x" value="360" />
+    <option name="y" value="-15" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -150,48 +105,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miliarder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miliarder" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (miliarder) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (miliarder) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miliarder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (miliarder) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
@@ -274,8 +194,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.game" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +221,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21405229" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31535947" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53104573" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,6 +234,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Main.py</url>
+          <line>335</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Scripts/GenerateBlocksForMilliarder.py">
@@ -333,59 +264,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../miliarder/venv/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/blocks.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1728">
-          <caret line="494" column="21" selection-start-line="494" selection-start-column="21" selection-end-line="494" selection-end-column="21" />
+        <state relative-caret-position="337">
+          <caret line="625" column="1" lean-forward="true" selection-start-line="625" selection-start-column="1" selection-end-line="625" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#645#687#0" />
-            <element signature="e#772#1178#0" />
-            <element signature="e#1224#1451#0" />
-            <element signature="e#1525#1698#0" />
-            <element signature="e#1737#1929#0" />
-            <element signature="e#1966#2237#0" />
-            <element signature="e#2281#2459#0" />
-            <element signature="e#2531#2924#0" />
-            <element signature="e#2963#3409#0" />
-            <element signature="e#3445#3512#0" />
-            <element signature="e#3584#3600#0" />
-            <element signature="e#3633#3649#0" />
-            <element signature="e#3688#3705#0" />
-            <element signature="e#3842#3937#0" />
-            <element signature="e#4015#4366#0" />
-            <element signature="e#4458#5227#0" />
-            <element signature="e#5327#6644#0" />
-            <element signature="e#6722#7622#0" />
-            <element signature="e#8849#9612#0" />
-            <element signature="e#9716#10438#0" />
-            <element signature="e#10544#11202#0" />
-            <element signature="e#11309#11944#0" />
-            <element signature="e#11980#12018#0" />
-            <element signature="e#12038#12885#0" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="381" column="16" selection-start-line="381" selection-start-column="4" selection-end-line="381" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="248" column="8" lean-forward="true" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
+        <state relative-caret-position="478">
+          <caret line="452" lean-forward="true" selection-start-line="452" selection-end-line="452" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1285#1652#0" />
+            <element signature="e#11441#11852#0" />
+            <element signature="e#11892#14383#0" />
+            <element signature="e#14419#17427#0" />
           </folding>
         </state>
       </provider>

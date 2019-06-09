@@ -4,13 +4,7 @@ class Player:
     cash = 0#Деньги игрока
 
     #Сертификаты на торговлю
-    certs = {
-        "Cars": False,
-        "HomeAppliances": False,
-        "Machines": False,
-        "Furniture": False,
-        "Hupermarket": False
-    }
+    certs = None
 
     #Размер кридита и текущий процент по кредиту
     credit = 0
@@ -18,38 +12,51 @@ class Player:
     creditPeriod = 0
 
     #ресурсы игрока
-    resources = {
-        "Material": 0,
-        "Cars": 0,
-        "HomeAppliances": 0,
-        "Machines": 0,
-        "Furniture": 0
-    }
+    resources = None
 
 #====Конструктор класса===
 #====Создание игрока====
     def __init__(self, name):
         self.name = name
         self.cash = 25000
+        self.resources = dict({
+        "Material": 0,
+        "Cars": 0,
+        "HomeAppliances": 0,
+        "Machines": 0,
+        "Furniture": 0
+    })
+        self.certs = dict({
+        "Cars": False,
+        "HomeAppliances": False,
+        "Machines": False,
+        "Furniture": False,
+        "Hupermarket": False
+    })
 
 #====Операции с собственностью====
     def purchaseCompany(self, company):
-        if (companies.get(company).getOwner() != None):
+        if (companies.get(company).getOwner() != "default"):
             print("This company has an owner")
+            return "NO"
         else:
             if (companies.get(company).getPurchase()>self.cash):
                 print("Not enough money")
+                return "NO"
             else:
                 self.cash -= companies.get(company).getPurchase()
                 companies.get(company).setOwner(self.name)
                 print("You bought the company")
+                return "OK"
 
     def saleCompany(self, company):
         if (companies.get(company).getOwner()==self.name):
             companies.get(company).resetOwner()
             self.cash += companies.get(company).getSale()
+            return "OK"
         else:
             print("This company does not belong to you")
+            return "NO"
 
 #====Операции с кредитами====
     def takeCredit(self, credit):
@@ -131,37 +138,40 @@ class Player:
     def getResource(self, resource):
         return self.resources.get(resource)
 
+
     def addResources(self, resource, count):
         addRes = self.resources.get(resource) + count
         self.resources.update({resource: addRes})
 
 #====Добыча сырья====
     def productionOfMaterials(self, company):
-        if (companies.get(company).getType() != "Materials"):
+        if (companies.get(company).getType() != 1):
             print("This company does not produce materials")
-            return 0
+            return "NO"
         if (companies.get(company).getOwner()!=self.name):
             print("This company does not belong to you")
-            return 0
-        self.addResources("Materials", companies.get(company).getProduction())
+            return "NO"
+        self.addResources("Material", companies.get(company).getProduction())
+        return "OK"
 
 #====Производство товара====
     def productionOfProduct(self, company, product):
         if (companies.get(company).getOwner() != self.name):
             print("This company does not belong to you")
-            return 0
-        if (companies.get(company).getType() != "Product"):
+            return "NO"
+        if (companies.get(company).getType() != 2):
             print("This company does not produce product")
-            return 0
+            return "NO"
         if (self.resources.get("Material") == 0):
             print("No materials available")
-            return 0
+            return "NO"
         if (self.resources.get("Material") <= companies.get(company).getProduction()):
             self.addResources(product,self.resources.get("Material"))
             self.resources.update({"Material":0})
         else:
             self.addResources(product,companies.get(company).getProduction())
-            self.addResources("Materials",-(companies.get(company).getProduction()))
+            self.addResources("Material",-(companies.get(company).getProduction()))
+        return "OK"
 #====Реализация товара====
     def saleOfProduct(self,company):#===>Продажа в гипермаркете
         print("Sale in Hypermarket")
@@ -325,12 +335,12 @@ class Player:
         return True
 class Company:
     cName = ""
-    cType = ""
+    cType = 0
     cNumber = 0
     cPurchase = 0
     cSale = 0
     cProduction = 0
-    cOwner = 0
+    cOwner = "default"
 
     def __init__(self, cName, cType, cNumber, cPurchase, cSale, cProduction):
         self.cName = cName
@@ -339,7 +349,7 @@ class Company:
         self.cPurchase = cPurchase
         self.cSale = cSale
         self.cProduction = cProduction
-        self.cOwner = None
+        self.cOwner = "default"
 
     def getType(self):
         return self.cType
@@ -357,18 +367,19 @@ class Company:
         self.cOwner = playerName
 
     def resetOwner(self):
-        self.cOwner = None
+        self.cOwner = "default"
 
     def getProduction(self):
         return self.cProduction
 
     def getName(self):
-        return self.cNamee
-
+        return self.cName
+companies = dict()
 class Event:
     game = ""
     course = 0
     circle = 0
+    writingCount = 0
     # playersCount = len(players)
     # curretPlayer = ""
     playersCount = 6
@@ -382,18 +393,32 @@ class Event:
     def __init__(self, game):
         self.game = game
 
+    def createCompany(self, idCompany, objCompany):
+        # print("company create")
+        companies.update({idCompany:objCompany})
+
+
+
+
     def nextPlayer(self):
         self.course += 1
         if (self.course >= self.playersCount):
             self.nextCircle()
             self.course = 0
 
+
     def nextCircle(self):
         self.circle += 1
 
     def natureProtectionControl(self):
+        # print("natureProtectionControl")
         if (self.productionOfMaterials == False):
-            if (self.productionOfMaterialsCircle == self.circle+1 and self.productionOfMaterialsCourse == self.course+1):
+            # print("productionOfMaterials == False")
+            # print(str(self.productionOfMaterialsCircle))
+            # print(str(self.circle))
+            # print(str(self.productionOfMaterialsCourse))
+            # print(str(self.course))
+            if (self.productionOfMaterialsCircle + 1 == self.circle and self.productionOfMaterialsCourse + 1 == self.course):
                 self.productionOfMaterials = True
         else:
             print("Extraction of materials is illegal")
@@ -402,16 +427,23 @@ class Event:
         self.productionOfMaterials = False
         self.productionOfMaterialsCircle = self.circle
         self.productionOfMaterialsCourse = self.course
+        print(str(self.productionOfMaterialsCircle))
+        print(str(self.productionOfMaterialsCourse))
 
-    def crisisOfOverproduction(self):
+    def crisisOfOverproductionControl(self):
+        print("crisisOfOverproduction")
         if (self.productionOfProduct == False):
-            if (
-                    self.productionOfProductCircle == self.circle + 1 and self.productionOfProductCourse == self.course + 1):
+            print("productionOfProduct == False")
+            print(str(self.productionOfMaterialsCircle))
+            print(str(self.circle))
+            print(str(self.productionOfMaterialsCourse))
+            print(str(self.course))
+            if (self.productionOfProductCircle + 1 == self.circle and self.productionOfProductCourse + 1 == self.course):
                 self.productionOfProduct = True
         else:
             print("Production is illegal")
 
-    def crisisOfOverproductionControl(self):
+    def crisisOfOverproduction(self):
         self.productionOfProduct = False
         self.productionOfProductCircle = self.circle
         self.productionOfProductCourse = self.course
@@ -431,39 +463,16 @@ class Event:
             playersName.append(players.get(p).getName())
         return playersName[numberPlayer]
 
-
-companies = {}
-
-for companyName in ["Materials", "HomeAppliances", "Cars", "Machines", "Furniture", "shopHomeAppliances", "shopCars", "shopMachines", "shopFurniture","Hypermarket"]:
-    if companyName == "Materials":
-        rangeNumber = [1,2,3,4,5,6,7,8,9,10,11,12]
-        companyType = "Materials"
-        # print(companyType)
-    if companyName == "HomeAppliances" or companyName == "Cars" or companyName == "Machines" or companyName == "Furniture":
-        rangeNumber = [1,2,3,4,5]
-        companyType = "Product"
-        # print(companyType)
-    if companyName == "shopHomeAppliances" or companyName == "shopCars" or companyName == "shopMachines" or companyName == "shopFurniture" or companyName == "Hypermarket":
-        rangeNumber = [1,2,3,4]
-        companyType = "Shop"
-        # print(companyType)
-    for companyNumber in rangeNumber:
-        companyPurch = 15000 * companyNumber
-        companySale = companyPurch * companyNumber - 5000 * companyNumber
-        companyProd = 5000 * companyNumber
-        companyKey = companyName + str(companyNumber)
-        company = Company(companyName, companyType, companyNumber, companyPurch, companySale, companyProd)
-        # print(company.getType())
-        companyKey = companyName + str(companyNumber)
-        # print(companyKey)
-        if (companies == None):
-            companies = dict.fromkeys([companyKey],company)
-        else:
-            companies[companyKey] = company
-        # print(companies.values())
-
-players = {}
+players = dict()
 for p in ["Ivan", "Petay", "Igor", "Masha", "Katay", "Natasha"]:
     player = Player(p)
     players[p] = player
+# players.get("Ivan").resources.update({"Material":1000})
+# for p in list(players):
+#     print(p)
+#     print(players.get(p).resources)
+players.get("Ivan").addResources("Material", 100000)
+# for p in list(players):
+#     print(p)
+#     print(players.get(p).resources)
 

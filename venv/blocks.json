@@ -391,9 +391,9 @@
     "type": 3,
     "resources": "Furniture",
     "name": "Магазин мебели",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 15000,
+    "priceSale": 15000,
+    "production": 15000
   },
   "shopFurniture1": {
     "x_coordinate": 3,
@@ -403,9 +403,9 @@
     "type": 3,
     "resources": "Furniture",
     "name": "Магазин мебели",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 50000,
+    "priceSale": 40000,
+    "production": 25000
   },
   "shopFurniture2": {
     "x_coordinate": 4,
@@ -415,9 +415,9 @@
     "type": 3,
     "resources": "Furniture",
     "name": "Магазин мебели",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 800000,
+    "priceSale": 60000,
+    "production": 40000
   },
   "shopFurniture3": {
     "x_coordinate": 5,
@@ -427,9 +427,9 @@
     "type": 3,
     "resources": "Furniture",
     "name": "Магазин мебели",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 160000,
+    "priceSale": 110000,
+    "production": 80000
   },
   "shopCars0": {
     "x_coordinate": 8,
@@ -439,9 +439,9 @@
     "type": 3,
     "resources": "Cars",
     "name": "Магазин автомобилей",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 10000,
+    "priceSale": 10000,
+    "production": 10000
   },
   "shopCars1": {
     "x_coordinate": 8,
@@ -451,9 +451,9 @@
     "type": 3,
     "resources": "Cars",
     "name": "Магазин автомобилей",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 70000,
+    "priceSale": 50000,
+    "production": 35000
   },
   "shopCars2": {
     "x_coordinate": 8,
@@ -463,9 +463,9 @@
     "type": 3,
     "resources": "Cars",
     "name": "Магазин автомобилей",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 120000,
+    "priceSale": 80000,
+    "production": 60000
   },
   "shopCars3": {
     "x_coordinate": 8,
@@ -475,9 +475,9 @@
     "type": 3,
     "resources": "Cars",
     "name": "Магазин автомобилей",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 180000,
+    "priceSale": 130000,
+    "production": 90000
   },
   "shopHomeAppliances0": {
     "x_coordinate": 4,
@@ -487,9 +487,9 @@
     "type": 3,
     "resources": "HomeAppliances",
     "name": "Магазин бытовой техники",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 15000,
+    "priceSale": 15000,
+    "production": 10000
   },
   "shopHomeAppliances1": {
     "x_coordinate": 5,
@@ -499,9 +499,9 @@
     "type": 3,
     "resources": "HomeAppliances",
     "name": "Магазин бытовой техники",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 30000,
+    "priceSale": 25000,
+    "production": 15000
   },
   "shopHomeAppliances2": {
     "x_coordinate": 6,
@@ -511,9 +511,9 @@
     "type": 3,
     "resources": "HomeAppliances",
     "name": "Магазин бытовой техники",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 90000,
+    "priceSale": 70000,
+    "production": 45000
   },
   "shopHomeAppliances3": {
     "x_coordinate": 7,
@@ -523,9 +523,9 @@
     "type": 3,
     "resources": "HomeAppliances",
     "name": "Магазин бытовой техники",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 170000,
+    "priceSale": 120000,
+    "production": 85000
   },
   "shopMachines0": {
     "x_coordinate": 1,
@@ -535,9 +535,9 @@
     "type": 3,
     "resources": "Machines",
     "name": "Магазин станков",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 10000,
+    "priceSale": 10000,
+    "production": 10000
   },
   "shopMachines1": {
     "x_coordinate": 1,
@@ -547,9 +547,9 @@
     "type": 3,
     "resources": "Machines",
     "name": "Магазин станков",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 60000,
+    "priceSale": 45000,
+    "production": 30000
   },
   "shopMachines2": {
     "x_coordinate": 1,
@@ -559,9 +559,9 @@
     "type": 3,
     "resources": "Machines",
     "name": "Магазин станков",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 100000,
+    "priceSale": 70000,
+    "production": 60000
   },
   "shopMachines3": {
     "x_coordinate": 1,
@@ -571,9 +571,9 @@
     "type": 3,
     "resources": "Machines",
     "name": "Магазин станков",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 190000,
+    "priceSale": 150000,
+    "production": 95000
   },
   "Hupermarket0": {
     "x_coordinate": 1,
@@ -583,9 +583,9 @@
     "type": 3,
     "resources": "All",
     "name": "Гипермаркет",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 200000,
+    "priceSale": 150000,
+    "production": 100000
   },
   "Hupermarket1": {
     "x_coordinate": 1,
@@ -595,9 +595,9 @@
     "type": 3,
     "resources": "All",
     "name": "Гипермаркет",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 350000,
+    "priceSale": 250000,
+    "production": 130000
   },
   "Hupermarket2": {
     "x_coordinate": 6,
@@ -607,9 +607,9 @@
     "type": 3,
     "resources": "All",
     "name": "Гипермаркет",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 450000,
+    "priceSale": 300000,
+    "production": 180000
   },
   "Hupermarket3": {
     "x_coordinate": 8,
@@ -619,8 +619,8 @@
     "type": 3,
     "resources": "All",
     "name": "Гипермаркет",
-    "pricePurchase": 0,
-    "priceSale": 0,
-    "production": 0
+    "pricePurchase": 600000,
+    "priceSale": 350000,
+    "production": 240000
   }
 }
